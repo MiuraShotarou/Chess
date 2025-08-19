@@ -1,14 +1,52 @@
 fileFormatVersion: 2
-guid: 286e888c7c071b047930dd3085b26e6c
-AssetOrigin:
-  serializedVersion: 1
-  productId: 284501
-  packageName: Evil Wizard 2
-  packageVersion: 1.0
-  assetPath: Assets/Evil Wizard 2/Sprites/Attack1.png
-  uploadId: 662692
+guid: 4abb790d5fb1c5944a1496c3302de44e
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 6934013284892070054
+    second: Attack1_0
+  - first:
+      213: -7957278214813060823
+    second: Attack1_1
+  - first:
+      213: 1409549213185883415
+    second: Attack1_2
+  - first:
+      213: 4976274401295337057
+    second: Attack1_3
+  - first:
+      213: -5639509438907974925
+    second: Attack1_4
+  - first:
+      213: 452926297546027425
+    second: Attack1_5
+  - first:
+      213: 6238536850125145498
+    second: Attack1_6
+  - first:
+      213: -7543445572115272496
+    second: Attack1_7
+  - first:
+      213: 3650157944247549718
+    second: Attack1_8
+  - first:
+      213: -7367232305435581187
+    second: Attack1_9
+  - first:
+      213: -2140677535924406074
+    second: Attack1_10
+  - first:
+      213: 8783954347948720124
+    second: Attack1_11
+  - first:
+      213: -6287830092200510888
+    second: Attack1_12
+  - first:
+      213: -2359986511456683444
+    second: Attack1_13
+  - first:
+      213: -5056835073426596899
+    second: Attack1_14
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -41,7 +79,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -54,7 +92,7 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: 0.41393, y: 0.26102}
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -76,19 +114,6 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -132,8 +157,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dfdfde304bae7648b1874a27dbf78a9
-      internalID: 143760055
+      spriteID: 4feb4872ec5d5d24987ddb9978f0076a
+      internalID: 6934013284892070054
       vertices: []
       indices: 
       edges: []
@@ -154,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34266220cbdac134e970eabb3e9e554b
-      internalID: 516175854
+      spriteID: 876ef380fbd7d4147b33609962248703
+      internalID: -7957278214813060823
       vertices: []
       indices: 
       edges: []
@@ -176,8 +201,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58063197cc8ac324d81b3681b296dc66
-      internalID: -864086529
+      spriteID: 358c7d8cc6827e94aa41fe980b4c8d10
+      internalID: 1409549213185883415
       vertices: []
       indices: 
       edges: []
@@ -198,8 +223,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e98390a0f1c96d349aeb9bcc4046a791
-      internalID: 2033902712
+      spriteID: 1d0e4de2574385f4c856be014f7e2156
+      internalID: 4976274401295337057
       vertices: []
       indices: 
       edges: []
@@ -220,8 +245,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bacf7874c7d8874aa7e905693a2e1c4
-      internalID: -170978650
+      spriteID: 63e73ee077a0a6f4d94c4119336cf19e
+      internalID: -5639509438907974925
       vertices: []
       indices: 
       edges: []
@@ -242,8 +267,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aaa788c73ea4613459521866d92d6132
-      internalID: -181773083
+      spriteID: 52fd5f63d88b9e943a82734a7b360a68
+      internalID: 452926297546027425
       vertices: []
       indices: 
       edges: []
@@ -264,8 +289,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd561cb519022a246934b8ae04a729b2
-      internalID: 1648130528
+      spriteID: 2a34ea267c6aa7345a79ce2a1edb31c4
+      internalID: 6238536850125145498
       vertices: []
       indices: 
       edges: []
@@ -286,8 +311,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41853e01fba56ba40925df78a10f7373
-      internalID: 297391161
+      spriteID: 71cca4c2d4add1443a18a6e95a810d4f
+      internalID: -7543445572115272496
       vertices: []
       indices: 
       edges: []
@@ -296,7 +321,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 48d61dfc2dcbf1644bf3d47ab7b61650
     internalID: 0
     vertices: []
     indices: 
@@ -306,14 +331,21 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Attack1_0: 143760055
-      Attack1_1: 516175854
-      Attack1_2: -864086529
-      Attack1_3: 2033902712
-      Attack1_4: -170978650
-      Attack1_5: -181773083
-      Attack1_6: 1648130528
-      Attack1_7: 297391161
+      Attack1_0: 6934013284892070054
+      Attack1_1: -7957278214813060823
+      Attack1_10: -2140677535924406074
+      Attack1_11: 8783954347948720124
+      Attack1_12: -6287830092200510888
+      Attack1_13: -2359986511456683444
+      Attack1_14: -5056835073426596899
+      Attack1_2: 1409549213185883415
+      Attack1_3: 4976274401295337057
+      Attack1_4: -5639509438907974925
+      Attack1_5: 452926297546027425
+      Attack1_6: 6238536850125145498
+      Attack1_7: -7543445572115272496
+      Attack1_8: 3650157944247549718
+      Attack1_9: -7367232305435581187
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
