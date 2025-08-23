@@ -1,18 +1,27 @@
 using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
 /// <summary>
-/// 駒を選択したときに駒の移動可能領域を展開する
+/// 駒を選択したときに駒の移動可能領域を展開する → 完成してから非表示の機能を付けても良いかもね
 /// </summary>
 public class OpenSelectableArea : InGameManager
 {
     Dictionary<string, PieceParameter> _pieceDic = new Dictionary<string, PieceParameter>(); //null
     GameObject _selectedPieceObj = null;
-    Vector3 _selectedPiecePos = default(Vector3); //オブジェクトと常に等しい
+    Vector3Int _selectedPiecePos = default(Vector3Int); //オブジェクトと常に等しい
     PieceParameter _selectedPieceParam = null;
+    //下記のフィールドをすべて配列に出来ないか検討
+    List<Vector3Int> _renderingOpenAreas  = new List<Vector3Int>();
+    Vector3Int[] _attackAreaPositions  = new Vector3Int[0];
+    Vector3Int[] _moveAreaPositions  = new Vector3Int[0];
+    //Outline変更用
+    List<GameObject> _enemyObjs = new  List<GameObject>();
+    int _prefabCount = 0;
+    int _PrefabCount { get { return _prefabCount; } set { _prefabCount = value; if (_prefabCount <= 0 ){ DrowTiles();}}}
     /// <summary>
     /// 駒の情報をDictionaryに登録する
     /// </summary>
@@ -31,6 +40,7 @@ public class OpenSelectableArea : InGameManager
     /// ①移動可能領域の展開
     /// ②FocusCameraの更新
     /// ③スキルの表示
+    /// このメソッドは駒を選択した後に一度だけ実行される
     /// </summary>
     /// <param name="selectedPieceObj"></param>
     public void StartOpenArea(GameObject selectedPieceObj)
@@ -39,72 +49,116 @@ public class OpenSelectableArea : InGameManager
         if (_selectedPieceObj != selectedPieceObj)
         {
             _selectedPieceObj = selectedPieceObj;
+            _selectedPiecePos = _Tilemap.WorldToCell(selectedPieceObj.transform.position);
+            if (_selectedPieceParam._PieceName != _selectedPieceObj.tag)
+            {
+                _selectedPieceParam =  _pieceDic[_selectedPieceObj.tag];
+            }
         }
-        Animator animatorController = selectedPieceObj.GetComponent<Animator>();
-        animatorController.Play("AddOneLine");
-        //移動可能領域の展開に必要な要素
-        //①移動可能な範囲を検索する → ノーマルタイルでかつ、駒の持つ移動可能範囲内であれば
-        //②上下は0.5, 左右は1.0 の幅で次のタイルを取得できる
-        //③順番に表示したいので中心座標が必要
-        //絶対に必要なのは駒ごとの移動可能座標と、足し算を行う処理、そして方角の判断、Animationを繰り返し再生するint型、移動した先で敵のマスを検知したらそこから先のマスは表示しないようにする処理、そしてそのマスにいる駒はハイライトさせる処理・カーソルを合わせると赤色のタイルが表示される処理、移動した後に深緑のタイルが設定されるようにする
-        //方角ごとで関数を呼び出せばよいのか？　とはいえ、それだとばらつきの出る恐れがある
-        //AnimationEventが一番優秀かもしれない
-        //AnimationEventをもう一度呼び出す必要がある場合は、LooptimeをOnにする
-        
+        Initialize();
+        ActivePieceOutline(_selectedPieceObj.GetComponent<SpriteRenderer>());
+        _AnimatorController.Play("AddOneLine");
     }
     /// <summary>
     /// AnimationEventで駒の移動可能領域を一行拡大する
     /// </summary>
     public void AddOneLineOpenArea()
     {
-        
-        if (_selectedPiecePos != _selectedPieceObj.transform.position)
-        {
-            _selectedPiecePos = _selectedPieceObj.transform.position;
-        }
-        if (_selectedPieceParam._PieceName != _selectedPieceObj.tag)
-        {
-            _selectedPieceParam =  _pieceDic[_selectedPieceObj.tag];
-        }
-        List<Vector3Int> renderingOpenAreas = ReturnRenderingOpenArea(); //戻り値 == 選択可能領域 && 敵の駒の下にある || TileBase == _NomalTile
-        // 深緑のマスを検知したときのみコライダーを出現させる
-        //敵がいたからといって撃破できるわけではない + 敵がいないからといって撃破出来ないわけでもない → 敵を撃破できるか否か、が先である
-        //攻撃可能範囲にコライダーを出現させ、敵がいたらそこのPositionと敵のオブジェクトをreturnする → 敵のオブジェクトのOutlineを変更する & 敵がいたタイルの座標をSelectConroller.csに送信しそこのポジションだけ赤タイルを表示するように設定する
-        //移動可能範囲で検索をかけ、NomalTileの場合のみにPosiionをreturnする
-        
-        //行動可能領域がない or 範囲検索が一度で済む駒である場合に処理から抜け出す
-        if (renderingOpenAreas.Count == 0
-            ||
-            _selectedPieceParam._IsMoveLimit)
-        {
-            return;
-        }
-        else
-        {
-            TilesRenderer(renderingOpenAreas);
-        }
-        //_selectedPieceObjを取得する
-        //_selectedPieceObjの中身によって移動領域を確定させる
-        //実際に移動できる範囲を検出するための関数を呼び出す
-        //移動可能領域がなければreturn = null;で終了する
-        //戻り値のコレクションから取り出して該当するVector3IntにTileBase を設定する
-        //もう一度,AnimationClipを再生する
+        ReturnRenderingMoveArea();
+        ReturnRenderingAttackArea();
     }
-
-    List<Vector3Int> ReturnRenderingOpenArea()
+    void ReturnRenderingMoveArea()
     {
-        
-        List<Vector3Int> renderingOpenAreas = new List<Vector3Int>();
-        return renderingOpenAreas;
+        for (int i = 0; i < _selectedPieceParam._MoveAreaPositions.Length; i++)
+        {
+            if (_moveAreaPositions[i] == default(Vector3Int))
+            {
+                _moveAreaPositions[i] = _selectedPiecePos;
+            }
+            _moveAreaPositions[i] += _selectedPieceParam._MoveAreaPositions[i];
+            TileBase moveAreaTileBase = _Tilemap.GetTile(_moveAreaPositions[i]);
+            //移動範囲内のタイルがFieldTileでなかったなら、continueする
+            if (moveAreaTileBase != _FieldTileBase)
+            {
+                continue;
+            }
+            _renderingOpenAreas.Add(_moveAreaPositions[i]);
+        }
+    }
+    void ReturnRenderingAttackArea()
+    {
+        _PrefabCount = _selectedPieceParam._AttackAreaPositions.Length;
+        for (int i = 0; i < _selectedPieceParam._AttackAreaPositions.Length; i++)
+        {
+            if (_attackAreaPositions[i] == default(Vector3Int))
+            {
+                _attackAreaPositions[i] = _selectedPiecePos;
+            }
+            _attackAreaPositions[i] += _selectedPieceParam._AttackAreaPositions[i];
+            TileBase attackAreaTileBase = _Tilemap.GetTile(_attackAreaPositions[i]);
+            //攻撃範囲内のタイルがSelectedTileでなかったなら、continueする
+            if (attackAreaTileBase != _SelectedTileBase)
+            {
+                _PrefabCount -= 1;
+                continue;
+            }
+            Vector3 attackAreaWorldPosition = _Tilemap.CellToWorld(_attackAreaPositions[i]);
+            GameObject boxCollider2DObj = Instantiate(_BoxCollider2DPrefab, attackAreaWorldPosition, Quaternion.identity);//ここで、別のメソッドが呼ばれるので注意
+            float destroyTimer = i * 0.1f;
+            Destroy(boxCollider2DObj, destroyTimer);
+        }
     }
     /// <summary>
     /// 引数に渡されたポジションにタイルを描画する
     /// </summary>
-    void TilesRenderer(List<Vector3Int> renderingOpenAreas)
+    void DrowTiles()
     {
-        for (int i = 0; i < renderingOpenAreas.Count; i++)
+        if (_renderingOpenAreas.Count != 0 )
         {
-            _Tilemap.SetTile(renderingOpenAreas[i], _CanSelectedTileBase);
+            for (int i = 0; i < _renderingOpenAreas.Count; i++)
+            {
+                _Tilemap.SetTile(_renderingOpenAreas[i], _CanSelectedTileBase);
+            }
         }
+        if (_selectedPieceParam._IsMoveLimit
+            ||
+            _renderingOpenAreas.Count == 0)
+        {
+            return;
+        }
+        _renderingOpenAreas.Clear();
+        _AnimatorController.Play("AddOneLine");
+    }
+    /// <summary>
+    /// _attackAreaPositions, _moveAreaPositionsを初期化
+    /// </summary>
+    void Initialize()
+    {
+        _attackAreaPositions = new Vector3Int[_selectedPieceParam._AttackAreaPositions.Length];
+        _moveAreaPositions = new Vector3Int[_selectedPieceParam._MoveAreaPositions.Length];
+    }
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="spriteRenderer"></param>
+    void ActivePieceOutline(SpriteRenderer spriteRenderer)
+    {
+        spriteRenderer.color = Color.white;
+        spriteRenderer.material = Resources.Load<Material>("OutlineMaterial");
+    }
+    /// <summary>
+    /// ReturnRenderingOpenArea() でInstance化したPrefabから衝突情報を受けて呼び出される
+    /// 敵の駒があると判明されたマス目だけの処理をする
+    /// </summary>
+    /// <param name="collision2D"></param>
+    protected void JudgmentPieceGroup(GameObject collisionObj, Transform prefabTrs) //一応、ここで取得された敵のオブジェクトを記憶しておくことも可能
+    {
+        //flipXから敵の駒であるか否かを判断する
+        if (_selectedPieceObj.GetComponent<SpriteRenderer>().flipX != collisionObj.GetComponent<SpriteRenderer>().flipX)
+        {
+            _renderingOpenAreas.Add(_Tilemap.WorldToCell(prefabTrs.position));
+            ActivePieceOutline(collisionObj.GetComponent<SpriteRenderer>());
+        }
+        _PrefabCount -= 1;
     }
 }

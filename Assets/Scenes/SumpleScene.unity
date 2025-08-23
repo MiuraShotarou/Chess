@@ -2088,6 +2088,7 @@ MonoBehaviour:
   _selectedTileBase: {fileID: 11400000, guid: 5c7edb569040af94e99c4c3e119f1367, type: 2}
   _canSelectedTileBase: {fileID: 11400000, guid: a553ebaada31f6048a480e71537d6ea8, type: 2}
   _fieldTileBase: {fileID: 0}
+  _boxCollider2DPrefab: {fileID: 0}
 --- !u!4 &881766244
 Transform:
   m_ObjectHideFlags: 0
@@ -2133,6 +2134,7 @@ MonoBehaviour:
   _selectedTileBase: {fileID: 0}
   _canSelectedTileBase: {fileID: 0}
   _fieldTileBase: {fileID: 0}
+  _boxCollider2DPrefab: {fileID: 0}
 --- !u!95 &881766247
 Animator:
   serializedVersion: 7
@@ -2173,6 +2175,7 @@ MonoBehaviour:
   _selectedTileBase: {fileID: 0}
   _canSelectedTileBase: {fileID: 0}
   _fieldTileBase: {fileID: 0}
+  _boxCollider2DPrefab: {fileID: 0}
 --- !u!1 &928941697
 GameObject:
   m_ObjectHideFlags: 0

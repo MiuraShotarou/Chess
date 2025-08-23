@@ -9,11 +9,11 @@ public class PieceParameter : ScriptableObject
     [SerializeField] string _pieceName;
     [SerializeField] bool _isMoveLimit;
     [SerializeField ,Tooltip("駒を中心にした時の攻撃可能範囲座標の一列目だけを入力してください")]
-    Vector3Int[] _atackAreaPositions;
+    Vector3Int[] _attackAreaPositions;
     [SerializeField, Tooltip("駒を中心にした時の移動可能範囲座標の一列目だけを入力してください")] 
     Vector3Int[] _moveAreaPositions;
     public string _PieceName => _pieceName;
     public bool _IsMoveLimit => _isMoveLimit;
-    public Vector3Int[] _AtackAreaPositions => _atackAreaPositions;
+    public Vector3Int[] _AttackAreaPositions => _attackAreaPositions;
     public Vector3Int[] _MoveAreaPositions => _moveAreaPositions;
 }
