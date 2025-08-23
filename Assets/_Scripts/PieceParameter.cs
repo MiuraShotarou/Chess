@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+
 /// <summary>
 /// 駒ごとの移動可能領域を設定・保存するためのScriptableObject
 /// </summary>
@@ -12,14 +14,23 @@ public class PieceParameter : ScriptableObject
     //プロモーション（条件：ポーンが突き当りのマスに到着した時、キング・ポーン以外の好きな駒に変化することができる）
     //ステイルメイト（効果；チェックがかかっていない状態で何かの駒を動かすと敗北が決まってしまうという時、試合結果はドローになる）
     //ドロー（条件：キング対キングになること、ステイルメイト、3回同一局面、50回ポーンが動かずどの駒も取られていない、合意によるドロー）
+
+    //これら特殊ルール（スキル）をデリゲートで持たせるのはありかも
     [SerializeField] string _pieceName;
     [SerializeField] int _moveCount;
-    [SerializeField ,Tooltip("駒を中心にした時の攻撃可能範囲座標の一列目だけを入力してください")]
+
+    [SerializeField, Tooltip("駒を中心にした時の攻撃可能範囲座標の一列目だけを入力してください")]
     Vector3Int[] _attackAreaPositions;
-    [SerializeField, Tooltip("駒を中心にした時の移動可能範囲座標の一列目だけを入力してください")] 
+
+    [SerializeField, Tooltip("駒を中心にした時の移動可能範囲座標の一列目だけを入力してください")]
     Vector3Int[] _moveAreaPositions;
+
+    bool _isNotMove = true;
+    Func<PieceParameter> _activeSkill;
     public string _PieceName => _pieceName;
     public int _MoveCount => _moveCount;
     public Vector3Int[] _AttackAreaPositions => _attackAreaPositions;
     public Vector3Int[] _MoveAreaPositions => _moveAreaPositions;
+    public bool _IsNotMove => _isNotMove;
+    public Func<PieceParameter> _ActiveSkill => _activeSkill; //Func関数内で_isNotMoveなどの書き換えを行うべき
 }

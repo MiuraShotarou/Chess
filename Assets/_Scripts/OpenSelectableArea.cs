@@ -21,6 +21,9 @@ public class OpenSelectableArea : InGameManager
     Vector3Int[] _moveAreaPositions  = new Vector3Int[0];
     //Outline変更用
     List<GameObject> _enemyObjs = new  List<GameObject>();
+    //勝手なルール
+    //_attackAreaPositionsにおいて、z == 1 はこれ以上コライダーを出現させる意味がないことを表す
+    //
     
     int _prefabCount = 0;
     int _PrefabCount { get { return _prefabCount; } set { _prefabCount = value; if (_prefabCount <= 0 ){ DrowTiles();}}}
@@ -52,9 +55,11 @@ public class OpenSelectableArea : InGameManager
         {
             _selectedPieceObj = selectedPieceObj;
             _selectedPiecePos = _Tilemap.WorldToCell(selectedPieceObj.transform.position);
-            if (_selectedPieceParam._PieceName != _selectedPieceObj.tag)
+            if (_selectedPieceParam == null
+                ||
+                _selectedPieceParam._PieceName != _selectedPieceObj.tag)
             {
-                _selectedPieceParam =  _pieceDic[_selectedPieceObj.tag];
+                _selectedPieceParam =  _pieceDic[_selectedPieceObj.tag]; //ここを変更しない限り、駒ごとの変数は変更できない → そもそも駒ごとに動いたのか、動いてないかの情報を持たせる必要がある
             }
             _selectedPieceMoveCounet = _selectedPieceParam._MoveCount;
         }

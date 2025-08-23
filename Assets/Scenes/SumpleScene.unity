@@ -2077,12 +2077,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 881766242}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a523f455fcdb75c4e99dd9a5e688a5cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pieceParameters: []
+  _pieceParameters:
+  - {fileID: 11400000, guid: 17908109610fc1747b75882f448ee7b2, type: 2}
+  - {fileID: 11400000, guid: 001c85002512d1243a5ad03478b79137, type: 2}
+  - {fileID: 11400000, guid: f3df21f7303dff849bb145208fb94e23, type: 2}
+  - {fileID: 11400000, guid: b9858c368c1dfb049bde999ceaea213d, type: 2}
+  - {fileID: 11400000, guid: 4080018f80fc8e24fb79eda4d0c0083e, type: 2}
+  - {fileID: 11400000, guid: ec14011dfad56cc49843ee4102f62ab3, type: 2}
   _tilemap: {fileID: 944707308}
   _selectedTileBase: {fileID: 11400000, guid: e08269613e9dbc84f85ec9f8f9b219c4, type: 2}
   _canSelectedTileBase: {fileID: 11400000, guid: 42f9beb51b98f9c4e892aeb2667e1de1, type: 2}
@@ -2128,7 +2134,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a185e08321eaf9459ef4d4523df1925, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pieceParameters: []
+  _pieceParameters:
+  - {fileID: 11400000, guid: 17908109610fc1747b75882f448ee7b2, type: 2}
+  - {fileID: 11400000, guid: 001c85002512d1243a5ad03478b79137, type: 2}
+  - {fileID: 11400000, guid: f3df21f7303dff849bb145208fb94e23, type: 2}
+  - {fileID: 11400000, guid: b9858c368c1dfb049bde999ceaea213d, type: 2}
+  - {fileID: 11400000, guid: 4080018f80fc8e24fb79eda4d0c0083e, type: 2}
+  - {fileID: 11400000, guid: ec14011dfad56cc49843ee4102f62ab3, type: 2}
   _tilemap: {fileID: 944707308}
   _selectedTileBase: {fileID: 11400000, guid: e08269613e9dbc84f85ec9f8f9b219c4, type: 2}
   _canSelectedTileBase: {fileID: 11400000, guid: 42f9beb51b98f9c4e892aeb2667e1de1, type: 2}
@@ -2169,7 +2181,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 517c4a51118093245a9a5f165176b273, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pieceParameters: []
+  _pieceParameters:
+  - {fileID: 11400000, guid: 17908109610fc1747b75882f448ee7b2, type: 2}
+  - {fileID: 11400000, guid: 001c85002512d1243a5ad03478b79137, type: 2}
+  - {fileID: 11400000, guid: f3df21f7303dff849bb145208fb94e23, type: 2}
+  - {fileID: 11400000, guid: b9858c368c1dfb049bde999ceaea213d, type: 2}
+  - {fileID: 11400000, guid: 4080018f80fc8e24fb79eda4d0c0083e, type: 2}
+  - {fileID: 11400000, guid: ec14011dfad56cc49843ee4102f62ab3, type: 2}
   _tilemap: {fileID: 944707308}
   _selectedTileBase: {fileID: 11400000, guid: e08269613e9dbc84f85ec9f8f9b219c4, type: 2}
   _canSelectedTileBase: {fileID: 11400000, guid: 42f9beb51b98f9c4e892aeb2667e1de1, type: 2}
