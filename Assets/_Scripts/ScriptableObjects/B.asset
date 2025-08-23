@@ -12,7 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52c464c910ed7404b957133892f3be0b, type: 3}
   m_Name: B
   m_EditorClassIdentifier: 
-  _pieceName: 
-  _isMoveLimit: 0
-  _atackAreaPositions: []
-  _moveAreaPositions: []
+  _pieceName: B
+  _moveCount: 7
+  _attackAreaPositions:
+  - {x: -1, y: 1, z: 0}
+  - {x: -1, y: -1, z: 0}
+  - {x: 1, y: -1, z: 0}
+  - {x: 1, y: 1, z: 0}
+  _moveAreaPositions:
+  - {x: -1, y: 1, z: 0}
+  - {x: -1, y: -1, z: 0}
+  - {x: 1, y: -1, z: 0}
+  - {x: 1, y: 1, z: 0}

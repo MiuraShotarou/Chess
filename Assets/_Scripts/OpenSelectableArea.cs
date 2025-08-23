@@ -14,12 +14,14 @@ public class OpenSelectableArea : InGameManager
     GameObject _selectedPieceObj = null;
     Vector3Int _selectedPiecePos = default(Vector3Int); //オブジェクトと常に等しい
     PieceParameter _selectedPieceParam = null;
+    int _selectedPieceMoveCounet = 0;
     //下記のフィールドをすべて配列に出来ないか検討
     List<Vector3Int> _renderingOpenAreas  = new List<Vector3Int>();
     Vector3Int[] _attackAreaPositions  = new Vector3Int[0];
     Vector3Int[] _moveAreaPositions  = new Vector3Int[0];
     //Outline変更用
     List<GameObject> _enemyObjs = new  List<GameObject>();
+    
     int _prefabCount = 0;
     int _PrefabCount { get { return _prefabCount; } set { _prefabCount = value; if (_prefabCount <= 0 ){ DrowTiles();}}}
     /// <summary>
@@ -54,6 +56,7 @@ public class OpenSelectableArea : InGameManager
             {
                 _selectedPieceParam =  _pieceDic[_selectedPieceObj.tag];
             }
+            _selectedPieceMoveCounet = _selectedPieceParam._MoveCount;
         }
         Initialize();
         ActivePieceOutline(_selectedPieceObj.GetComponent<SpriteRenderer>());
@@ -64,10 +67,10 @@ public class OpenSelectableArea : InGameManager
     /// </summary>
     public void AddOneLineOpenArea()
     {
-        ReturnRenderingMoveArea();
-        ReturnRenderingAttackArea();
+        JudgmentRenderingMoveArea();
+        JudgmentRenderingAttackArea();
     }
-    void ReturnRenderingMoveArea()
+    void JudgmentRenderingMoveArea()
     {
         for (int i = 0; i < _selectedPieceParam._MoveAreaPositions.Length; i++)
         {
@@ -85,7 +88,7 @@ public class OpenSelectableArea : InGameManager
             _renderingOpenAreas.Add(_moveAreaPositions[i]);
         }
     }
-    void ReturnRenderingAttackArea()
+    void JudgmentRenderingAttackArea()
     {
         _PrefabCount = _selectedPieceParam._AttackAreaPositions.Length;
         for (int i = 0; i < _selectedPieceParam._AttackAreaPositions.Length; i++)
@@ -97,7 +100,9 @@ public class OpenSelectableArea : InGameManager
             _attackAreaPositions[i] += _selectedPieceParam._AttackAreaPositions[i];
             TileBase attackAreaTileBase = _Tilemap.GetTile(_attackAreaPositions[i]);
             //攻撃範囲内のタイルがSelectedTileでなかったなら、continueする
-            if (attackAreaTileBase != _SelectedTileBase)
+            if (attackAreaTileBase != _SelectedTileBase
+                ||
+                _attackAreaPositions[i].z == 1) 
             {
                 _PrefabCount -= 1;
                 continue;
@@ -106,6 +111,8 @@ public class OpenSelectableArea : InGameManager
             GameObject boxCollider2DObj = Instantiate(_BoxCollider2DPrefab, attackAreaWorldPosition, Quaternion.identity);//ここで、別のメソッドが呼ばれるので注意
             float destroyTimer = i * 0.1f;
             Destroy(boxCollider2DObj, destroyTimer);
+            int notSearchAxis = 1;
+            _attackAreaPositions[i].z = notSearchAxis;
         }
     }
     /// <summary>
@@ -113,6 +120,12 @@ public class OpenSelectableArea : InGameManager
     /// </summary>
     void DrowTiles()
     {
+        if (_selectedPieceMoveCounet <= 0
+            ||
+            _renderingOpenAreas.Count == 0)
+        {
+            return;
+        }
         if (_renderingOpenAreas.Count != 0 )
         {
             for (int i = 0; i < _renderingOpenAreas.Count; i++)
@@ -120,12 +133,7 @@ public class OpenSelectableArea : InGameManager
                 _Tilemap.SetTile(_renderingOpenAreas[i], _CanSelectedTileBase);
             }
         }
-        if (_selectedPieceParam._IsMoveLimit
-            ||
-            _renderingOpenAreas.Count == 0)
-        {
-            return;
-        }
+        _selectedPieceMoveCounet -= 1;
         _renderingOpenAreas.Clear();
         _AnimatorController.Play("AddOneLine");
     }

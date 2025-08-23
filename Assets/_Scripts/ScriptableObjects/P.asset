@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: P
   m_EditorClassIdentifier: 
   _pieceName: P
-  _isMoveLimit: 0
-  _atackAreaPositions:
-  - {x: 0, y: 0, z: 0}
+  _moveCount: 2
+  _attackAreaPositions:
+  - {x: 1, y: 1, z: 0}
+  - {x: 1, y: -1, z: 0}
   _moveAreaPositions:
-  - {x: 0, y: 0, z: 0}
+  - {x: 1, y: 0, z: 0}
