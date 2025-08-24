@@ -26,11 +26,10 @@ public class SelectTileController : InGameManager
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         Vector3Int currentTilePos = _Tilemap.WorldToCell(new Vector3(mousePos.x, mousePos.y, 0));
         TileBase currentTileBase = _Tilemap.GetTile(currentTilePos);
-        
+
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
-            Debug.Log(_EncounterTileBase);
-            _Tilemap.SetTile(currentTilePos, _EncounterTileBase);
+            // Debug.Log($"currentTilePosInt {currentTilePos}, currentTilePos3 {_Tilemap.CellToWorld(currentTilePos)}"); //x -0.5 y - 0.05
         }
         
         if (EncouterTilePositions != null
@@ -52,10 +51,10 @@ public class SelectTileController : InGameManager
                  &&
                  Mouse.current.leftButton.wasPressedThisFrame)
         {
-            // _Tilemap.SetTile(currentTilePos, _SelectedTileBase);
+            _Tilemap.SetTile(currentTilePos, _SelectedTileBase);
             //キャラ下に配置されているタイルも設定する必要あり
             //キャラの移動処理
-            // enabled = false;
+            enabled = false;
         }
         else if (_beforeTilePos != currentTilePos)
         {

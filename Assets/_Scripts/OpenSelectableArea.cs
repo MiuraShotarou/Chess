@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
@@ -10,11 +11,12 @@ using UnityEngine.Tilemaps;
 /// </summary>
 public class OpenSelectableArea : InGameManager
 {
+    AddPieceFunction _addPieceFunction;
     Dictionary<string, PieceParameter> _pieceDic = new Dictionary<string, PieceParameter>(); //null
     GameObject _selectedPieceObj = null;
     Vector3Int _selectedPiecePos = default(Vector3Int); //オブジェクトと常に等しい
     PieceParameter _selectedPieceParam = null;
-    int _selectedPieceMoveCounet = 0;
+    int _selectedPieceMoveCount = 0;
     //下記のフィールドをすべて配列に出来ないか検討
     List<Vector3Int> _renderingOpenAreas  = new List<Vector3Int>();
     Vector3Int[] _attackAreaPositions  = new Vector3Int[0];
@@ -24,7 +26,6 @@ public class OpenSelectableArea : InGameManager
     //勝手なルール
     //_attackAreaPositionsにおいて、z == 1 はこれ以上コライダーを出現させる意味がないことを表す
     //
-    
     int _prefabCount = 0;
     int _PrefabCount { get { return _prefabCount; } set { _prefabCount = value; if (_prefabCount <= 0 ){ DrowTiles();}}}
     /// <summary>
@@ -32,11 +33,12 @@ public class OpenSelectableArea : InGameManager
     /// </summary>
     void Start()
     {
+        _addPieceFunction = GetComponent<AddPieceFunction>();
         if (_pieceDic.Count == 0)
         {
             for (int i = 0; i < _PieceParameters.Length; i++)
             {
-                _pieceDic.Add(_PieceParameters[i]._PieceName, _PieceParameters[i]);
+                _pieceDic.Add(_PieceParameters[i].PieceName(), _PieceParameters[i]);
             }
         }
     }
@@ -55,16 +57,29 @@ public class OpenSelectableArea : InGameManager
         {
             _selectedPieceObj = selectedPieceObj;
             _selectedPiecePos = _Tilemap.WorldToCell(selectedPieceObj.transform.position);
-            if (_selectedPieceParam == null
+            if (!_selectedPieceParam
                 ||
-                _selectedPieceParam._PieceName != _selectedPieceObj.tag)
+                _selectedPieceParam.PieceName() != _selectedPieceObj.tag)
             {
-                _selectedPieceParam =  _pieceDic[_selectedPieceObj.tag]; //ここを変更しない限り、駒ごとの変数は変更できない → そもそも駒ごとに動いたのか、動いてないかの情報を持たせる必要がある
+                _selectedPieceParam = _pieceDic[_selectedPieceObj.tag];
             }
-            _selectedPieceMoveCounet = _selectedPieceParam._MoveCount;
+            if (_selectedPieceParam.PieceName() == "P")
+            {
+                if (_selectedPieceObj.GetComponent<SpriteRenderer>().flipX)
+                {
+                    _selectedPieceParam = _addPieceFunction.UpdatePoneGroup(_selectedPieceParam);
+                }
+                if (_selectedPieceObj.transform.rotation.x == 0)
+                {
+                    _selectedPieceParam = _addPieceFunction.AddPoneMoveCount(_selectedPieceParam);
+                    _selectedPieceObj.transform.rotation = Quaternion.Euler(360, 0, 0);
+                };
+            }
+            _selectedPieceMoveCount = _selectedPieceParam.MoveCount();
         }
         Initialize();
         ActivePieceOutline(_selectedPieceObj.GetComponent<SpriteRenderer>());
+        _AnimatorController.enabled = true;
         _AnimatorController.Play("AddOneLine");
     }
     /// <summary>
@@ -77,14 +92,15 @@ public class OpenSelectableArea : InGameManager
     }
     void JudgmentRenderingMoveArea()
     {
-        for (int i = 0; i < _selectedPieceParam._MoveAreaPositions.Length; i++)
+        for (int i = 0; i < _selectedPieceParam.MoveAreaPositions().Length; i++)
         {
             if (_moveAreaPositions[i] == default(Vector3Int))
             {
                 _moveAreaPositions[i] = _selectedPiecePos;
             }
-            _moveAreaPositions[i] += _selectedPieceParam._MoveAreaPositions[i];
+            _moveAreaPositions[i] += _selectedPieceParam.MoveAreaPositions()[i];
             TileBase moveAreaTileBase = _Tilemap.GetTile(_moveAreaPositions[i]);
+            
             //移動範囲内のタイルがFieldTileでなかったなら、continueする
             if (moveAreaTileBase != _FieldTileBase)
             {
@@ -95,14 +111,14 @@ public class OpenSelectableArea : InGameManager
     }
     void JudgmentRenderingAttackArea()
     {
-        _PrefabCount = _selectedPieceParam._AttackAreaPositions.Length;
-        for (int i = 0; i < _selectedPieceParam._AttackAreaPositions.Length; i++)
+        _PrefabCount = _selectedPieceParam.AttackAreaPositions().Length;
+        for (int i = 0; i < _selectedPieceParam.AttackAreaPositions().Length; i++)
         {
             if (_attackAreaPositions[i] == default(Vector3Int))
             {
                 _attackAreaPositions[i] = _selectedPiecePos;
             }
-            _attackAreaPositions[i] += _selectedPieceParam._AttackAreaPositions[i];
+            _attackAreaPositions[i] += _selectedPieceParam.AttackAreaPositions()[i];
             TileBase attackAreaTileBase = _Tilemap.GetTile(_attackAreaPositions[i]);
             //攻撃範囲内のタイルがSelectedTileでなかったなら、continueする
             if (attackAreaTileBase != _SelectedTileBase
@@ -125,10 +141,11 @@ public class OpenSelectableArea : InGameManager
     /// </summary>
     void DrowTiles()
     {
-        if (_selectedPieceMoveCounet <= 0
+        if (_selectedPieceMoveCount <= 0
             ||
             _renderingOpenAreas.Count == 0)
         {
+            _AnimatorController.enabled = false;
             return;
         }
         if (_renderingOpenAreas.Count != 0 )
@@ -138,17 +155,17 @@ public class OpenSelectableArea : InGameManager
                 _Tilemap.SetTile(_renderingOpenAreas[i], _CanSelectedTileBase);
             }
         }
-        _selectedPieceMoveCounet -= 1;
+        _selectedPieceMoveCount -= 1;
         _renderingOpenAreas.Clear();
-        _AnimatorController.Play("AddOneLine");
+        _AnimatorController.Play("AddOneLine", 0, 0);
     }
     /// <summary>
     /// _attackAreaPositions, _moveAreaPositionsを初期化
     /// </summary>
     void Initialize()
     {
-        _attackAreaPositions = new Vector3Int[_selectedPieceParam._AttackAreaPositions.Length];
-        _moveAreaPositions = new Vector3Int[_selectedPieceParam._MoveAreaPositions.Length];
+        _attackAreaPositions = new Vector3Int[_selectedPieceParam.AttackAreaPositions().Length];
+        _moveAreaPositions = new Vector3Int[_selectedPieceParam.MoveAreaPositions().Length];
     }
     /// <summary>
     /// 
