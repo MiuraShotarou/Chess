@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Q
   m_EditorClassIdentifier: 
   _pieceName: Q
-  _isMoveLimit: 0
+  _moveCount: 7
   _attackAreaPositions:
   - {x: 0, y: 1, z: 0}
   - {x: -1, y: 1, z: 0}

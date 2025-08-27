@@ -12,7 +12,8 @@ public class AddPieceFunction : MonoBehaviour
     //ドロー（条件：キング対キングになること、ステイルメイト、3回同一局面、50回ポーンが動かずどの駒も取られていない、合意によるドロー）
     public PieceParameter UpdatePoneGroup(PieceParameter param)
     {
-        param.AttackAreaPositions = () => new Vector3Int[1]{ new Vector3Int(-1, 1, 0)};
+        param.MoveAreaPositions = () => new Vector3Int[1]{ new Vector3Int(-1, 1, 0)};
+        param.AttackAreaPositions = () => new Vector3Int[2]{ new Vector3Int(0, 1, 0), new  Vector3Int(-1, 0, 0)};
         return param;
     }
     public PieceParameter AddPoneMoveCount(PieceParameter param)

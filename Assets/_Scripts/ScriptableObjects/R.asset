@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: R
   m_EditorClassIdentifier: 
   _pieceName: R
-  _moveCount: 0
+  _moveCount: 7
   _attackAreaPositions:
   - {x: -1, y: 1, z: 0}
   - {x: -1, y: -1, z: 0}

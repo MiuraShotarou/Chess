@@ -1,7 +1,9 @@
 using System;
 using UnityEngine;
 using UnityEngine.Tilemaps;
-
+/// <summary>
+/// 作業の最後、自作オブジェクトをすべてキャッシュにしておくこと
+/// </summary>
 public class InGameManager : MonoBehaviour
 {
     [SerializeField] PieceParameter[] _pieceParameters; 
@@ -20,7 +22,6 @@ public class InGameManager : MonoBehaviour
     protected TileBase _EncounterTileBase => _encounterTileBase;
     protected GameObject _BoxCollider2DPrefab => _boxCollider2DPrefab;
     protected Animator _AnimatorController => _animatorController;
-
     void Awake()
     {
         _animatorController = GetComponent<Animator>();
