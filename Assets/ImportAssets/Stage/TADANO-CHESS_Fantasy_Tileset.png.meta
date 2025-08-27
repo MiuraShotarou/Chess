@@ -1,0 +1,3153 @@
+fileFormatVersion: 2
+guid: 94596eca8f9b76b4bab3bb86d571aa39
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c17093dd12783b942aa58786d2aa891b
+      internalID: 987507426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 2208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 299df8136e4568d45a03dd1126b43976
+      internalID: 363697543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 2256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df3dd9fbafc81bf41a654db3cf7a80e5
+      internalID: 1814509778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 2160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a98a573ffcdb7542a7972326f388467
+      internalID: -1033708770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 2160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3a8eb4850dce544bc17f9e4d499e16
+      internalID: 246969932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_5
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 2208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c34a098147cb7424c8db3960e0d41ee7
+      internalID: 595977866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_6
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 2256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c788df932bc224b9b010865d1aa5c3
+      internalID: -960362180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa98152a89b94f64b9dae6f0951cf2e6
+      internalID: -1916483956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_8
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b76cca5e94ba240b2483512e19bd39
+      internalID: -457874558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_9
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a8520af6feeb341a8607d9430f0707
+      internalID: -1194035599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_10
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70750bb2d5e00964b8443ed16503fd34
+      internalID: -1593762473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_11
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec00af4eac00e68458fa7e1a2023aa6a
+      internalID: 808288503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_12
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1baa5a1493b7dc4e85257fada0dbcf4
+      internalID: 155222707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_13
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 2256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6b54a6c8023ee242a47438685a63e32
+      internalID: -1993189603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_14
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 2256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c2e4ecbe5ccf3c47aa67dad4ab25872
+      internalID: -1519978079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_15
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 2208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4635cef9afefaae4a8489fb833e6b1a6
+      internalID: 86403295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_16
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 2208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a998125f4a57fa4f9eb3f833deea34a
+      internalID: -193116577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_17
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 2160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d539afbddfb8d45bdf9881f46f95fb
+      internalID: -1088821057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_18
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 2160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f96717f18a729646b0551c428f690be
+      internalID: -1062078717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_19
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 2112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c57e0f051be84584ca7418d58e1e9fab
+      internalID: 1011638841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_20
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 2112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe110c4f27c917944b93386cb4de6265
+      internalID: -1117057698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_21
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 2112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d1b7562813eb044a3771f5b76dafd7
+      internalID: 1467634032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_22
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 2064
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e58a9f712977d41b36eb5a9404d2ea
+      internalID: 2117899449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_23
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 2064
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f845e003138344ab82b1a4f7cbf2e5
+      internalID: -217449679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_24
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 2016
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f1f721fe3975bc42a856cb06346e00f
+      internalID: 1892371575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_25
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 2016
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921ebae9a13458f459587865940aa668
+      internalID: 54879767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_26
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1363b88231345914ab7d09cc1b1e0954
+      internalID: -649298163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_27
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a55622034357844ba2671d1db63a791
+      internalID: -444852640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_28
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2064
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b08a951f5377d4188b554670d9d953
+      internalID: 1066700076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_29
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2064
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe876c97ad77284b943dadda578363d
+      internalID: -1771146231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_30
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2016
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e012a3480f6e9348b70d7a0bce08de4
+      internalID: 1340768500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_31
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2016
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 883ae43ed63960d44b927ff9e3ddecbf
+      internalID: -873071153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_32
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca0a608db0a72324a9fc90420df98d88
+      internalID: 205885005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_33
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c602a12e55b923b468ec7d736e21cc5d
+      internalID: 1354755217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_34
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7584a06ddf5b8e549b6fa4ca9c58bb1c
+      internalID: -946206670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_35
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 2160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc355963a257c54fba97d33225a6d36
+      internalID: 334527167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_36
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 2208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea0a0ffc65f85e24197d16ff2d390f0a
+      internalID: 1229067919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_37
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 2256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e8085c6c5722f145a482c93d1375017
+      internalID: 503907336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_38
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264bf281c4fd2724e89986c090571d8c
+      internalID: -439767303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_39
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 2256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48886f85449ae6c4daa92e7a07a38b4d
+      internalID: 1050592265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_40
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 2208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce728fcb6c4895c4184bee67c9ba1dc0
+      internalID: 1706144971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_41
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d0ea03e5c7a6946974acef012ad76c
+      internalID: -450847387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_42
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a63fafc3e69f0b46a0aca5673b90a8f
+      internalID: 718224642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_43
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 2160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e17028ef9814884284f5b2d1e85ed84
+      internalID: -615456750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_44
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 2160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d45b960137e788544a7636a60e308315
+      internalID: 1356229022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_45
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 2160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dddfda252b8affa4f9a7b433f792908b
+      internalID: 229135407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_46
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 2208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65616f5c2c33c3440a58ae0d1101ff10
+      internalID: 1642166733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_47
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 2208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b4b845b539eff94f8bcb8a0a1ce5a64
+      internalID: -1019235633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_48
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 2256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb0f3cbb4ff6c84b81db64ca34bd45f
+      internalID: -335232011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_49
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 2256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 559eaf7a694e9f7458ab2fbf10bc6976
+      internalID: 857570823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_50
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 2256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dde506081b12a44c8f2d22cbab57637
+      internalID: -1069817150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_51
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 647dd56bde3567e4abef1a628951774d
+      internalID: 1589043201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_52
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b89c5898cef6a5748b961381ed56d4d2
+      internalID: -627346579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_53
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 2208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e70b61b8075164eb865eb322126d4c
+      internalID: -649552255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_54
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 2160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85037cd71e1cc594f9312846469323b6
+      internalID: 1170220662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_55
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95439b0ee7a3d0f40b5ad04f9cce33ea
+      internalID: 967130762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_56
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dab86b0354e7ce4eb4d3655374b467b
+      internalID: -1357784613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_57
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 2112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c884c3f9a8abc24e9ca13eb38089c14
+      internalID: 1791300381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_58
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 2064
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d6bf5ac6cc9d445af630826feab2c9
+      internalID: -766454907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_59
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2064
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55c244e1ae354704faf3d6407763de74
+      internalID: 275823847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_60
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2016
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 510b59c45113a5243a6108c18b169b6b
+      internalID: 1996007187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_61
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 2016
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a0bc8724df1a954687089b7792e6a7c
+      internalID: 635158224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_62
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 2016
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2beee75466de70d4c94b934b842fc0c8
+      internalID: -730387672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_63
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 2064
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3beffff2b3aa3a4409e06c82048221aa
+      internalID: 900886908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_64
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 2112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 973feaf8efd53294bbc6cb548854fcb2
+      internalID: 1994100700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_65
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 2112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03731ee8fbe8316499ac97f78b775267
+      internalID: -422729878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_66
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 2064
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 665c7615c180f0a42939730f85a04d8e
+      internalID: 630988384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_67
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 2016
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2641127a1efaeb246a63733adf3d5783
+      internalID: 633022808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_68
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1968
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e80827b7bfd20c4d889b296a4da0da0
+      internalID: -531120034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_69
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1968
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 637f53caec00bf8499151ddead271555
+      internalID: 301304655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_70
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1968
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f5ea66bd839ad4ca4b04c5923277ac
+      internalID: -1788485630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_71
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1968
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec084184d18c88438562f759c3646ce
+      internalID: 1956159081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_72
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1920
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ccfa183f9e0b542aaa44777f4df8d6
+      internalID: -1434293453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_73
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1872
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84f5d89772c485a4793d9039188809ea
+      internalID: -648885563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_74
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1968
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f851b620199fbf94e809a27e44e14512
+      internalID: 1390800400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1968
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a63c5f7bd0fb9324ea8f4f7bbde84758
+      internalID: 1093823602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_76
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1920
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1038fb0bf34b6e4fa900f9b4b5d5bd1
+      internalID: -2026139889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_77
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1872
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d77e0eaca4ad2324bb6f33a437615ee2
+      internalID: 673048239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_78
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1872
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db096ec83cf78b94fb6d232f328cd6a7
+      internalID: -2118259094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_79
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1920
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd26fb1a4495b542bc4ce98c2ec88d7
+      internalID: 1274276297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_80
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1920
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4079193f4d35e8e4889ec799b78d3a3d
+      internalID: -1064490061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_81
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1872
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15dc8c4746217404083dcfdd79ed4432
+      internalID: -774148490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_82
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1920
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43f4b2fd10f910489e878ef09e73752
+      internalID: 366912155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_83
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1872
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ea567ba65ff4a4e8182f9733f416a9
+      internalID: 892623100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_84
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1920
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbaa6d3cf810aad42b4e720b04234624
+      internalID: -1846129562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_85
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1872
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425442e17f593da4a89bd1514898bca0
+      internalID: 621724269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_86
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1968
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f7190b35e7f6e144829af4f792b684d
+      internalID: -526267165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_87
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1968
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca3f014ebf1f18b41a68afd1e62a3816
+      internalID: -2069964260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_88
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1920
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27535c385be67e04c8e111ee3cd094e5
+      internalID: -1045691344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_89
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1920
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 633836412996ac546bd143bf52c947c7
+      internalID: -425994201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_90
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1872
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2fe269c17720f4eb4e140a12ab42db
+      internalID: -1277300967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_91
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1872
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3912247222b434b408b9831770a137b5
+      internalID: 59282458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_92
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 2256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff8a3a558730414d97de9adcfb4ec3e
+      internalID: 1789651276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_93
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 2208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f6c4a9bf2158349bf16b11e6176158
+      internalID: 273676758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_94
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff056e274f615164186731190201d5b8
+      internalID: -1650393550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_95
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5924587cc596945438f46dbcd4aeedc9
+      internalID: 779759791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_96
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 2160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107f0eeccee29fd40bced7fa199d8012
+      internalID: -555599064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_97
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 2064
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cafdf51ff44d2746a95fa13fb5239e2
+      internalID: 1175604270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_98
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 2016
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ad9619a7e82874ebb01d0de509adfd
+      internalID: 767043764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_99
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2016
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 115238522a3f05d4e840e9a101ddeb88
+      internalID: 74632777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2064
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 444f40cfa5287d842b816738f04b68ee
+      internalID: -1298481253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_101
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1894ab21b99b81243b373321f62b6f35
+      internalID: -236086618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_102
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 2112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84cb91684972d16429d222199a0e4943
+      internalID: -376985169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_103
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 2112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdbe71bf9902a574985d2bc710d9166a
+      internalID: -12416434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_104
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 2064
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eceaac6f75d5990428b667878694e147
+      internalID: -270486005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_105
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 2064
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ebac658a22863449964ef993aa8382d
+      internalID: 280669369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_106
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 2016
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f54ed5bd58aaa34fb4ae4b6facfff90
+      internalID: 1633196552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_107
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 2016
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcac1d9c1a17f904a9729ed07be66667
+      internalID: 1476921661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_108
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1968
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f0d427c0efd704b8aac8a0af48b6cf
+      internalID: -237771624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_109
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1920
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf5f086385427d4283f16bcf631a395
+      internalID: -1082897564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_110
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1968
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a32d3cf0bf8e8f4c834aab7c59eba13
+      internalID: 56595029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_111
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1920
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00af1a389c565cc498379ffb337475bc
+      internalID: 990199103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_112
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1872
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe217611836d3ec4b956f6f0c6706c86
+      internalID: 689659288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_113
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1872
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a928fdb19720a48a1c322b95cf5eef
+      internalID: -459633457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_114
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1968
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a5544adfbfa28c4e9753f8452d42397
+      internalID: 398739497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_115
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1968
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d4cce6ccda1fd4c9a1319fc7abdc38
+      internalID: -380227527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_116
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1920
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af524452a6693884c94c60f074e61195
+      internalID: 1061136723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_117
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1920
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c972d3b532a4704288b5cbfa30da9b7
+      internalID: 1168815742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_118
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1872
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a136c894ccc90f4ea2ba459fcc5f7e5
+      internalID: -1826230160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_119
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1872
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0aad678b9e326645b4c4591bc876616
+      internalID: -369317283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_120
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1968
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219c5e54737d684449f7045fca426d1b
+      internalID: 2109022053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_121
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1968
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d37e9fbc3403404d8c72e1a8c322cf9
+      internalID: -250887079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_122
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1920
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9ae093bb0cc8e4ba1faaa4baaa7278
+      internalID: -67371126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_123
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1872
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6b1a997ced7914db14c6907573608a
+      internalID: -524671472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_124
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1920
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7bef018a3fb93843973cb73c6c842bf
+      internalID: 1129817427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_125
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1872
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09df35554432bd84c94550763bf676ea
+      internalID: -841555445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_126
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1968
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e14354cb5020ef408a8050cfbf724c0
+      internalID: -974841831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_127
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1968
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae70325e396b824386705f0121c5d9d
+      internalID: -1272054449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_128
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1920
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c56333ef2a112d4abb892869f685d7f
+      internalID: -384884014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_129
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1920
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9dde9a12c4df7348a6f644cd2d19486
+      internalID: -1990613887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_130
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1872
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b9e47aa3fe2d14683fe25cefe3027b
+      internalID: 696639630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TADANO-CHESS_Fantasy_Tileset_131
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1872
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b763d64101d864ab01c49dbf24b579
+      internalID: 725573827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TADANO-CHESS_Fantasy_Tileset_0: 987507426
+      TADANO-CHESS_Fantasy_Tileset_1: 363697543
+      TADANO-CHESS_Fantasy_Tileset_10: -1593762473
+      TADANO-CHESS_Fantasy_Tileset_100: -1298481253
+      TADANO-CHESS_Fantasy_Tileset_101: -236086618
+      TADANO-CHESS_Fantasy_Tileset_102: -376985169
+      TADANO-CHESS_Fantasy_Tileset_103: -12416434
+      TADANO-CHESS_Fantasy_Tileset_104: -270486005
+      TADANO-CHESS_Fantasy_Tileset_105: 280669369
+      TADANO-CHESS_Fantasy_Tileset_106: 1633196552
+      TADANO-CHESS_Fantasy_Tileset_107: 1476921661
+      TADANO-CHESS_Fantasy_Tileset_108: -237771624
+      TADANO-CHESS_Fantasy_Tileset_109: -1082897564
+      TADANO-CHESS_Fantasy_Tileset_11: 808288503
+      TADANO-CHESS_Fantasy_Tileset_110: 56595029
+      TADANO-CHESS_Fantasy_Tileset_111: 990199103
+      TADANO-CHESS_Fantasy_Tileset_112: 689659288
+      TADANO-CHESS_Fantasy_Tileset_113: -459633457
+      TADANO-CHESS_Fantasy_Tileset_114: 398739497
+      TADANO-CHESS_Fantasy_Tileset_115: -380227527
+      TADANO-CHESS_Fantasy_Tileset_116: 1061136723
+      TADANO-CHESS_Fantasy_Tileset_117: 1168815742
+      TADANO-CHESS_Fantasy_Tileset_118: -1826230160
+      TADANO-CHESS_Fantasy_Tileset_119: -369317283
+      TADANO-CHESS_Fantasy_Tileset_12: 155222707
+      TADANO-CHESS_Fantasy_Tileset_120: 2109022053
+      TADANO-CHESS_Fantasy_Tileset_121: -250887079
+      TADANO-CHESS_Fantasy_Tileset_122: -67371126
+      TADANO-CHESS_Fantasy_Tileset_123: -524671472
+      TADANO-CHESS_Fantasy_Tileset_124: 1129817427
+      TADANO-CHESS_Fantasy_Tileset_125: -841555445
+      TADANO-CHESS_Fantasy_Tileset_126: -974841831
+      TADANO-CHESS_Fantasy_Tileset_127: -1272054449
+      TADANO-CHESS_Fantasy_Tileset_128: -384884014
+      TADANO-CHESS_Fantasy_Tileset_129: -1990613887
+      TADANO-CHESS_Fantasy_Tileset_13: -1993189603
+      TADANO-CHESS_Fantasy_Tileset_130: 696639630
+      TADANO-CHESS_Fantasy_Tileset_131: 725573827
+      TADANO-CHESS_Fantasy_Tileset_14: -1519978079
+      TADANO-CHESS_Fantasy_Tileset_15: 86403295
+      TADANO-CHESS_Fantasy_Tileset_16: -193116577
+      TADANO-CHESS_Fantasy_Tileset_17: -1088821057
+      TADANO-CHESS_Fantasy_Tileset_18: -1062078717
+      TADANO-CHESS_Fantasy_Tileset_19: 1011638841
+      TADANO-CHESS_Fantasy_Tileset_2: 1814509778
+      TADANO-CHESS_Fantasy_Tileset_20: -1117057698
+      TADANO-CHESS_Fantasy_Tileset_21: 1467634032
+      TADANO-CHESS_Fantasy_Tileset_22: 2117899449
+      TADANO-CHESS_Fantasy_Tileset_23: -217449679
+      TADANO-CHESS_Fantasy_Tileset_24: 1892371575
+      TADANO-CHESS_Fantasy_Tileset_25: 54879767
+      TADANO-CHESS_Fantasy_Tileset_26: -649298163
+      TADANO-CHESS_Fantasy_Tileset_27: -444852640
+      TADANO-CHESS_Fantasy_Tileset_28: 1066700076
+      TADANO-CHESS_Fantasy_Tileset_29: -1771146231
+      TADANO-CHESS_Fantasy_Tileset_3: -1033708770
+      TADANO-CHESS_Fantasy_Tileset_30: 1340768500
+      TADANO-CHESS_Fantasy_Tileset_31: -873071153
+      TADANO-CHESS_Fantasy_Tileset_32: 205885005
+      TADANO-CHESS_Fantasy_Tileset_33: 1354755217
+      TADANO-CHESS_Fantasy_Tileset_34: -946206670
+      TADANO-CHESS_Fantasy_Tileset_35: 334527167
+      TADANO-CHESS_Fantasy_Tileset_36: 1229067919
+      TADANO-CHESS_Fantasy_Tileset_37: 503907336
+      TADANO-CHESS_Fantasy_Tileset_38: -439767303
+      TADANO-CHESS_Fantasy_Tileset_39: 1050592265
+      TADANO-CHESS_Fantasy_Tileset_4: 246969932
+      TADANO-CHESS_Fantasy_Tileset_40: 1706144971
+      TADANO-CHESS_Fantasy_Tileset_41: -450847387
+      TADANO-CHESS_Fantasy_Tileset_42: 718224642
+      TADANO-CHESS_Fantasy_Tileset_43: -615456750
+      TADANO-CHESS_Fantasy_Tileset_44: 1356229022
+      TADANO-CHESS_Fantasy_Tileset_45: 229135407
+      TADANO-CHESS_Fantasy_Tileset_46: 1642166733
+      TADANO-CHESS_Fantasy_Tileset_47: -1019235633
+      TADANO-CHESS_Fantasy_Tileset_48: -335232011
+      TADANO-CHESS_Fantasy_Tileset_49: 857570823
+      TADANO-CHESS_Fantasy_Tileset_5: 595977866
+      TADANO-CHESS_Fantasy_Tileset_50: -1069817150
+      TADANO-CHESS_Fantasy_Tileset_51: 1589043201
+      TADANO-CHESS_Fantasy_Tileset_52: -627346579
+      TADANO-CHESS_Fantasy_Tileset_53: -649552255
+      TADANO-CHESS_Fantasy_Tileset_54: 1170220662
+      TADANO-CHESS_Fantasy_Tileset_55: 967130762
+      TADANO-CHESS_Fantasy_Tileset_56: -1357784613
+      TADANO-CHESS_Fantasy_Tileset_57: 1791300381
+      TADANO-CHESS_Fantasy_Tileset_58: -766454907
+      TADANO-CHESS_Fantasy_Tileset_59: 275823847
+      TADANO-CHESS_Fantasy_Tileset_6: -960362180
+      TADANO-CHESS_Fantasy_Tileset_60: 1996007187
+      TADANO-CHESS_Fantasy_Tileset_61: 635158224
+      TADANO-CHESS_Fantasy_Tileset_62: -730387672
+      TADANO-CHESS_Fantasy_Tileset_63: 900886908
+      TADANO-CHESS_Fantasy_Tileset_64: 1994100700
+      TADANO-CHESS_Fantasy_Tileset_65: -422729878
+      TADANO-CHESS_Fantasy_Tileset_66: 630988384
+      TADANO-CHESS_Fantasy_Tileset_67: 633022808
+      TADANO-CHESS_Fantasy_Tileset_68: -531120034
+      TADANO-CHESS_Fantasy_Tileset_69: 301304655
+      TADANO-CHESS_Fantasy_Tileset_7: -1916483956
+      TADANO-CHESS_Fantasy_Tileset_70: -1788485630
+      TADANO-CHESS_Fantasy_Tileset_71: 1956159081
+      TADANO-CHESS_Fantasy_Tileset_72: -1434293453
+      TADANO-CHESS_Fantasy_Tileset_73: -648885563
+      TADANO-CHESS_Fantasy_Tileset_74: 1390800400
+      TADANO-CHESS_Fantasy_Tileset_75: 1093823602
+      TADANO-CHESS_Fantasy_Tileset_76: -2026139889
+      TADANO-CHESS_Fantasy_Tileset_77: 673048239
+      TADANO-CHESS_Fantasy_Tileset_78: -2118259094
+      TADANO-CHESS_Fantasy_Tileset_79: 1274276297
+      TADANO-CHESS_Fantasy_Tileset_8: -457874558
+      TADANO-CHESS_Fantasy_Tileset_80: -1064490061
+      TADANO-CHESS_Fantasy_Tileset_81: -774148490
+      TADANO-CHESS_Fantasy_Tileset_82: 366912155
+      TADANO-CHESS_Fantasy_Tileset_83: 892623100
+      TADANO-CHESS_Fantasy_Tileset_84: -1846129562
+      TADANO-CHESS_Fantasy_Tileset_85: 621724269
+      TADANO-CHESS_Fantasy_Tileset_86: -526267165
+      TADANO-CHESS_Fantasy_Tileset_87: -2069964260
+      TADANO-CHESS_Fantasy_Tileset_88: -1045691344
+      TADANO-CHESS_Fantasy_Tileset_89: -425994201
+      TADANO-CHESS_Fantasy_Tileset_9: -1194035599
+      TADANO-CHESS_Fantasy_Tileset_90: -1277300967
+      TADANO-CHESS_Fantasy_Tileset_91: 59282458
+      TADANO-CHESS_Fantasy_Tileset_92: 1789651276
+      TADANO-CHESS_Fantasy_Tileset_93: 273676758
+      TADANO-CHESS_Fantasy_Tileset_94: -1650393550
+      TADANO-CHESS_Fantasy_Tileset_95: 779759791
+      TADANO-CHESS_Fantasy_Tileset_96: -555599064
+      TADANO-CHESS_Fantasy_Tileset_97: 1175604270
+      TADANO-CHESS_Fantasy_Tileset_98: 767043764
+      TADANO-CHESS_Fantasy_Tileset_99: 74632777
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

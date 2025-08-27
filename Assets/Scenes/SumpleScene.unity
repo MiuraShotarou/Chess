@@ -1084,7 +1084,6 @@ GameObject:
   - component: {fileID: 355234210}
   - component: {fileID: 355234209}
   - component: {fileID: 355234212}
-  - component: {fileID: 355234213}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1210,22 +1209,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!114 &355234213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 355234208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56666c5a40171f54783dd416a44f42bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EventMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_MaxRayIntersections: 0
 --- !u!1 &401387738
 GameObject:
   m_ObjectHideFlags: 0
@@ -5314,6 +5297,7 @@ MonoBehaviour:
   _fieldTileBase: {fileID: 0}
   _encounterTileBase: {fileID: 0}
   _boxCollider2DPrefab: {fileID: 0}
+  _animatorController: {fileID: 0}
 --- !u!114 &1218987134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5373,6 +5357,18 @@ MonoBehaviour:
   _fieldTileBase: {fileID: 11400000, guid: 71b33732c778f5f439c93c0a98775ccc, type: 2}
   _encounterTileBase: {fileID: 11400000, guid: 0c8999e715a05fb4dae5783f2ae03f8f, type: 2}
   _boxCollider2DPrefab: {fileID: 4683045687927758297, guid: 120f97c7a4903544991abd5056b44280, type: 3}
+  _animatorController: {fileID: 0}
+  _addPieceFunction: {fileID: 0}
+  _selectedPieceObj: {fileID: 0}
+  _selectedPiecePos: {x: 0, y: 0, z: 0}
+  _selectedPieceParam: {fileID: 0}
+  _selectedPieceMoveCount: 0
+  _renderingOpenAreas: []
+  _attackAreaPositions: []
+  _moveAreaPositions: []
+  _enemyObjs: []
+  _encouterTilePositions: []
+  _prefabCount: 0
 --- !u!114 &1218987137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5398,6 +5394,10 @@ MonoBehaviour:
   _fieldTileBase: {fileID: 11400000, guid: 71b33732c778f5f439c93c0a98775ccc, type: 2}
   _encounterTileBase: {fileID: 11400000, guid: 0c8999e715a05fb4dae5783f2ae03f8f, type: 2}
   _boxCollider2DPrefab: {fileID: 4683045687927758297, guid: 120f97c7a4903544991abd5056b44280, type: 3}
+  _animatorController: {fileID: 0}
+  _beforeTilePos: {x: 0, y: 0, z: 0}
+  _selectedPiecePos: {x: 0, y: 0, z: 0}
+  _encouterTilePositions: []
 --- !u!114 &1218987138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5410,6 +5410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b86f49db096c21e408a68a8fc183d53f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _openSelectableArea: {fileID: 0}
 --- !u!114 &1218987139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5422,19 +5423,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 517c4a51118093245a9a5f165176b273, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pieceParameters:
-  - {fileID: 11400000, guid: 17908109610fc1747b75882f448ee7b2, type: 2}
-  - {fileID: 11400000, guid: 001c85002512d1243a5ad03478b79137, type: 2}
-  - {fileID: 11400000, guid: f3df21f7303dff849bb145208fb94e23, type: 2}
-  - {fileID: 11400000, guid: b9858c368c1dfb049bde999ceaea213d, type: 2}
-  - {fileID: 11400000, guid: 4080018f80fc8e24fb79eda4d0c0083e, type: 2}
-  - {fileID: 11400000, guid: ec14011dfad56cc49843ee4102f62ab3, type: 2}
-  _tilemap: {fileID: 502973764}
-  _selectedTileBase: {fileID: 11400000, guid: e08269613e9dbc84f85ec9f8f9b219c4, type: 2}
-  _canSelectedTileBase: {fileID: 11400000, guid: 42f9beb51b98f9c4e892aeb2667e1de1, type: 2}
-  _fieldTileBase: {fileID: 11400000, guid: 71b33732c778f5f439c93c0a98775ccc, type: 2}
-  _encounterTileBase: {fileID: 11400000, guid: 0c8999e715a05fb4dae5783f2ae03f8f, type: 2}
-  _boxCollider2DPrefab: {fileID: 4683045687927758297, guid: 120f97c7a4903544991abd5056b44280, type: 3}
 --- !u!4 &1218987140
 Transform:
   m_ObjectHideFlags: 0
@@ -5469,7 +5457,11 @@ MonoBehaviour:
   _fieldTileBase: {fileID: 0}
   _encounterTileBase: {fileID: 0}
   _boxCollider2DPrefab: {fileID: 0}
+  _animatorController: {fileID: 0}
   _001TileBase: {fileID: 0}
+  _beforeTilePos: {x: 0, y: 0, z: 0}
+  _selectedPiecePos: {x: 0, y: 0, z: 0}
+  _encouterTilePositions: []
   _shiftTargegtObj: {fileID: 412427730}
 --- !u!1 &1263193775
 GameObject:
@@ -7259,8 +7251,8 @@ Transform:
   m_GameObject: {fileID: 1906882876}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.5, y: -1.95, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_LocalPosition: {x: -5.3, y: -3.5, z: 0}
+  m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}

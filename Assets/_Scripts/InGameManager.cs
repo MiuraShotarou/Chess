@@ -1,29 +1,11 @@
-using System;
 using UnityEngine;
-using UnityEngine.Tilemaps;
-/// <summary>
-/// 作業の最後、自作オブジェクトをすべてキャッシュにしておくこと
-/// </summary>
+
 public class InGameManager : MonoBehaviour
 {
-    [SerializeField] PieceParameter[] _pieceParameters; 
-    [SerializeField] Tilemap _tilemap;
-    [SerializeField] TileBase _selectedTileBase;
-    [SerializeField] TileBase _canSelectedTileBase;
-    [SerializeField] TileBase _fieldTileBase;
-    [SerializeField] TileBase _encounterTileBase;
-    [SerializeField] GameObject _boxCollider2DPrefab;
-    Animator _animatorController;
-    protected PieceParameter[] _PieceParameters => _pieceParameters;
-    protected Tilemap _Tilemap => _tilemap;
-    protected TileBase _SelectedTileBase => _selectedTileBase;
-    protected TileBase _CanSelectedTileBase => _canSelectedTileBase;
-    protected TileBase _FieldTileBase => _fieldTileBase;
-    protected TileBase _EncounterTileBase => _encounterTileBase;
-    protected GameObject _BoxCollider2DPrefab => _boxCollider2DPrefab;
-    protected Animator _AnimatorController => _animatorController;
-    void Awake()
-    {
-        _animatorController = GetComponent<Animator>();
-    }
+    //遠近法を用いて一番上列のマスから一番下列のマスへ行くに連れてScaleが＋1.0 になる必要がある → １マスにつき +0.125
+    //移動量に応じて、描画の仕方だけを決めるScriptが必要かも
+    //Tilemap上での移動量は分かりやすいから、
+    //1マスにつき X 1.68 Y (変動する)
+    //AnimationClip"Move" に 移動先のTransformを設定したKeyfreamを挿入するScriptを書けば簡単に移動時のAnimationを実装できる → 現在の座標が"始点" → ""
+    //Positionが複雑なので、チェス公式の座標で管理しよう → V == a~h, H == 1~8, 左下 == a1, 右上 == h8 
 }
