@@ -5264,13 +5264,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1218987140}
   - component: {fileID: 1218987139}
-  - component: {fileID: 1218987138}
-  - component: {fileID: 1218987137}
-  - component: {fileID: 1218987136}
   - component: {fileID: 1218987135}
-  - component: {fileID: 1218987134}
-  - component: {fileID: 1218987133}
-  - component: {fileID: 1218987141}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -5278,38 +5272,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1218987133
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1218987132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df038b01792c8894bb4e40fb21ea3518, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _pieceParameters: []
-  _tilemap: {fileID: 0}
-  _selectedTileBase: {fileID: 0}
-  _canSelectedTileBase: {fileID: 0}
-  _fieldTileBase: {fileID: 0}
-  _encounterTileBase: {fileID: 0}
-  _boxCollider2DPrefab: {fileID: 0}
-  _animatorController: {fileID: 0}
---- !u!114 &1218987134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1218987132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c360316a73df0314990b3579166ddf52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &1218987135
 Animator:
   serializedVersion: 7
@@ -5332,85 +5294,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1218987136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1218987132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a185e08321eaf9459ef4d4523df1925, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _pieceParameters:
-  - {fileID: 11400000, guid: 17908109610fc1747b75882f448ee7b2, type: 2}
-  - {fileID: 11400000, guid: 001c85002512d1243a5ad03478b79137, type: 2}
-  - {fileID: 11400000, guid: f3df21f7303dff849bb145208fb94e23, type: 2}
-  - {fileID: 11400000, guid: b9858c368c1dfb049bde999ceaea213d, type: 2}
-  - {fileID: 11400000, guid: 4080018f80fc8e24fb79eda4d0c0083e, type: 2}
-  - {fileID: 11400000, guid: ec14011dfad56cc49843ee4102f62ab3, type: 2}
-  _tilemap: {fileID: 502973764}
-  _selectedTileBase: {fileID: 11400000, guid: e08269613e9dbc84f85ec9f8f9b219c4, type: 2}
-  _canSelectedTileBase: {fileID: 11400000, guid: 42f9beb51b98f9c4e892aeb2667e1de1, type: 2}
-  _fieldTileBase: {fileID: 11400000, guid: 71b33732c778f5f439c93c0a98775ccc, type: 2}
-  _encounterTileBase: {fileID: 11400000, guid: 0c8999e715a05fb4dae5783f2ae03f8f, type: 2}
-  _boxCollider2DPrefab: {fileID: 4683045687927758297, guid: 120f97c7a4903544991abd5056b44280, type: 3}
-  _animatorController: {fileID: 0}
-  _addPieceFunction: {fileID: 0}
-  _selectedPieceObj: {fileID: 0}
-  _selectedPiecePos: {x: 0, y: 0, z: 0}
-  _selectedPieceParam: {fileID: 0}
-  _selectedPieceMoveCount: 0
-  _renderingOpenAreas: []
-  _attackAreaPositions: []
-  _moveAreaPositions: []
-  _enemyObjs: []
-  _encouterTilePositions: []
-  _prefabCount: 0
---- !u!114 &1218987137
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1218987132}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a523f455fcdb75c4e99dd9a5e688a5cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _pieceParameters:
-  - {fileID: 11400000, guid: 17908109610fc1747b75882f448ee7b2, type: 2}
-  - {fileID: 11400000, guid: 001c85002512d1243a5ad03478b79137, type: 2}
-  - {fileID: 11400000, guid: f3df21f7303dff849bb145208fb94e23, type: 2}
-  - {fileID: 11400000, guid: b9858c368c1dfb049bde999ceaea213d, type: 2}
-  - {fileID: 11400000, guid: 4080018f80fc8e24fb79eda4d0c0083e, type: 2}
-  - {fileID: 11400000, guid: ec14011dfad56cc49843ee4102f62ab3, type: 2}
-  _tilemap: {fileID: 502973764}
-  _selectedTileBase: {fileID: 11400000, guid: e08269613e9dbc84f85ec9f8f9b219c4, type: 2}
-  _canSelectedTileBase: {fileID: 11400000, guid: 42f9beb51b98f9c4e892aeb2667e1de1, type: 2}
-  _fieldTileBase: {fileID: 11400000, guid: 71b33732c778f5f439c93c0a98775ccc, type: 2}
-  _encounterTileBase: {fileID: 11400000, guid: 0c8999e715a05fb4dae5783f2ae03f8f, type: 2}
-  _boxCollider2DPrefab: {fileID: 4683045687927758297, guid: 120f97c7a4903544991abd5056b44280, type: 3}
-  _animatorController: {fileID: 0}
-  _beforeTilePos: {x: 0, y: 0, z: 0}
-  _selectedPiecePos: {x: 0, y: 0, z: 0}
-  _encouterTilePositions: []
---- !u!114 &1218987138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1218987132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b86f49db096c21e408a68a8fc183d53f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _openSelectableArea: {fileID: 0}
 --- !u!114 &1218987139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5438,31 +5321,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1218987141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1218987132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ea9b37fcd75fc44faa28a1eed3b3b27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _pieceParameters: []
-  _tilemap: {fileID: 502973764}
-  _selectedTileBase: {fileID: 0}
-  _canSelectedTileBase: {fileID: 0}
-  _fieldTileBase: {fileID: 0}
-  _encounterTileBase: {fileID: 0}
-  _boxCollider2DPrefab: {fileID: 0}
-  _animatorController: {fileID: 0}
-  _001TileBase: {fileID: 0}
-  _beforeTilePos: {x: 0, y: 0, z: 0}
-  _selectedPiecePos: {x: 0, y: 0, z: 0}
-  _encouterTilePositions: []
-  _shiftTargegtObj: {fileID: 412427730}
 --- !u!1 &1263193775
 GameObject:
   m_ObjectHideFlags: 0
